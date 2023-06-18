@@ -1,9 +1,8 @@
 package com.utk.apps.main.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.OneToMany;
-import jakarta.persistence.Table;
-
+import javax.persistence.Entity;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
 import java.util.List;
 
 @Entity
@@ -14,7 +13,7 @@ public class Theatre extends EntityMaster {
     private String address;
 
     @OneToMany
-    private List<Auditorium> audis;
+    private List<Auditorium> auditoriums;
     private String company;
 
     public String getName() {
@@ -33,12 +32,12 @@ public class Theatre extends EntityMaster {
         this.address = address;
     }
 
-    public List<Auditorium> getAudis() {
-        return audis;
+    public List<Auditorium> getAuditoriums() {
+        return auditoriums;
     }
 
-    public void setAudis(List<Auditorium> audis) {
-        this.audis = audis;
+    public void setAuditoriums(List<Auditorium> auditoriums) {
+        this.auditoriums = auditoriums;
     }
 
     public String getCompany() {

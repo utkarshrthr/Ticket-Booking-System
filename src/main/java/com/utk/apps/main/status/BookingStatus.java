@@ -2,5 +2,5 @@ package com.utk.apps.main.status;
 
 public enum BookingStatus {
 
-    PAID, CANCELLED, REFUNDED
+    PAID, CANCELLED, REFUNDED, IN_PROGRESS
 }

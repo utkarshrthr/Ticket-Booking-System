@@ -1,8 +1,8 @@
 package com.utk.apps.main.entity;
 
 import com.utk.apps.main.status.Feature;
-import jakarta.persistence.*;
 
+import javax.persistence.*;
 import java.util.List;
 
 @Entity
@@ -11,7 +11,7 @@ public class Auditorium extends EntityMaster {
 
     private String name;
 
-    @OneToMany
+    @OneToMany(mappedBy = "auditorium")
     private List<Show> shows;
 
     @ElementCollection

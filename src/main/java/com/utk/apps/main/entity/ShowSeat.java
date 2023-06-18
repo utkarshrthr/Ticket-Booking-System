@@ -1,7 +1,8 @@
 package com.utk.apps.main.entity;
 
 import com.utk.apps.main.status.SeatStatus;
-import jakarta.persistence.*;
+
+import javax.persistence.*;
 
 @Entity
 @Table(name = "show_seats")

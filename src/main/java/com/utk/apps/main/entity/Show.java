@@ -1,8 +1,8 @@
 package com.utk.apps.main.entity;
 
 import com.utk.apps.main.status.Feature;
-import jakarta.persistence.*;
 
+import javax.persistence.*;
 import java.time.LocalDateTime;
 import java.util.List;
 

@@ -1,8 +1,8 @@
 package com.utk.apps.main.entity;
 
-import jakarta.persistence.Embedded;
-import jakarta.persistence.Id;
-import jakarta.persistence.MappedSuperclass;
+import javax.persistence.Embedded;
+import javax.persistence.Id;
+import javax.persistence.MappedSuperclass;
 
 @MappedSuperclass
 public class EntityMaster {
