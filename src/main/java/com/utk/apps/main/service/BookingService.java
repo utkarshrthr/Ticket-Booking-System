@@ -10,6 +10,8 @@ import com.utk.apps.main.repository.ShowSeatRepository;
 import com.utk.apps.main.status.BookingStatus;
 import com.utk.apps.main.status.SeatStatus;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Isolation;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -30,6 +32,7 @@ public class BookingService {
         this.bookingRepository = bookingRepository;
     }
 
+    @Transactional(isolation = Isolation.SERIALIZABLE)
     public Booking bookTicket(Long showId, List<Long> showSeatIds) {
         Optional<Show> optionalShow = showRepository.findById(showId);
 
